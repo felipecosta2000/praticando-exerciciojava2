@@ -1,0 +1,49 @@
+package entity;
+
+public class Usuario extends Pessoa {
+	
+	private Integer codigo;
+	private Double espaco;
+	
+	private Double valorPlano;
+
+	public Integer getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(Integer codigo) {
+		this.codigo = codigo;
+	}
+
+	public Double getEspaco() {
+		return espaco;
+	}
+
+	public void setEspaco(Double espaco) {
+		this.espaco = espaco;
+	}
+
+	public Double getValorPlano() {
+		return valorPlano;
+	}
+
+	public void setValorPlano(Double valorPlano) {
+		this.valorPlano = valorPlano;
+	}
+	
+	public static void main(String[] args) {
+	
+		Usuario u = new Usuario();
+		u.setCodigo(100);
+		u.setNome("joao");
+		u.setEmail("joao@gmail.com");
+		u.setSexo("m");
+		
+		u.setEspaco(2.);
+		u.setValorPlano(120.);
+		
+		System.out.println(u.getNome() + "," + u.getValorPlano());
+	}
+
+}
+
