@@ -1,0 +1,26 @@
+package control;
+
+import entity.Cliente;
+
+public class ControlleCliente {
+	
+	public String gerarRetornoIdade(Cliente c) {
+		c.setNome("teste");
+		if (c.getIdade() >= 18) {
+			return "Maior de Idade";
+			
+		}else {
+			return "Menor de Idade";
+		}
+	}
+	public static void main(String[] args) {
+		Cliente c = new Cliente();
+		c.setNome("jose");
+		c.setIdade(20);
+		System.out.println(c.getNome());
+		
+		ControlleCliente x = new ControlleCliente();
+		System.out.println(x.gerarRetornoIdade(c));
+		System.out.println(c.getNome());
+	}
+}
